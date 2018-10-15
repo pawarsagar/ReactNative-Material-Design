@@ -8,7 +8,7 @@ export default class Screen1 extends React.Component {
         return (
             <View style={styles.container}>
                 <StatusBar barStyle="light-content" />
-                <View style={{ flexDirection: 'row' }}>
+                <View style={{ flexDirection: 'row',/* backgroundColor:'green', */height: '15%' }}>
                     <View style={styles.textContainer}>
                         <Text style={styles.textInput}>Explore</Text>
                     </View>
@@ -18,7 +18,7 @@ export default class Screen1 extends React.Component {
                         </View>
                     </View>
                 </View>
-                <View style={{ flexDirection: 'row', alignItems: 'center', }}>
+                <View style={{ alignContent: 'stretch', }}>
 
 
                     <View style={styles.cardComponent}>
@@ -34,7 +34,9 @@ const styles = StyleSheet.create({
         flex: 1,
         backgroundColor: 'rgb(30,30,36)',
         paddingTop: 35,
-       
+
+
+
 
 
     },
@@ -71,13 +73,11 @@ const styles = StyleSheet.create({
 
     },
     cardComponent: {
+        paddingTop: '1%',
+        width: '100%',
+        height: '100%'
 
-        paddingTop: 5,
-        paddingLeft: 25,
-        //backgroundColor: 'skyblue',
-        height: 450,
-        width: 360,
-        bottom: 500
+
 
 
     }
